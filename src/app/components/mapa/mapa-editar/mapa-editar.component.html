@@ -1,0 +1,16 @@
+<form [formGroup]="forma">
+    <mat-form-field>
+      <input matInput placeholder="Ingrese la ciudad" value="Medellin" formControlName="titulo">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea rows="3" matInput placeholder="Ingrese una descripcion de la ubicacion" formControlName="descripcion"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" id="dist" (click)="guardarMarcador()">
+        Guardar
+      </button>
+      <button mat-raised-button color="warn" (click)="onNoClick()" type="button">
+        Cancelar
+      </button>
+  </form>
